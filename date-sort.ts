@@ -19,7 +19,7 @@ let arr = [
 
 // nullを除外
 arr = arr.filter(data => data.date != null);
-// 送信日時を新しい順に並べる
+// 送信日時を新しい順に並べる(降順)
 arr = arr.sort((a, b) => (a.date < b.date ? 1 : -1));
 
 console.log(arr);
